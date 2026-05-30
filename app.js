@@ -11,7 +11,7 @@ input.addEventListener('keydown', (e) => {
 });
 
 // Crear y agreagar una tarea a la lista de tareas
-// en el DOM.
+// en el dom
 function agregarTarea() {
   if (input.value) {
     // Crear tarea.
