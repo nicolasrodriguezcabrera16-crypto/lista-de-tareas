@@ -1,0 +1,149 @@
+/* Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: url(imagenes/fondo\ pro.jpg) no-repeat center center/cover;
+}
+
+/* Contenedor principal */
+
+.contenedor {
+  width: 100%;
+  max-width: 750px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Título */
+
+h1 {
+  font-size: 55px;
+  color: #1312a8;
+  text-align: center;
+}
+
+/* Input */
+
+input {
+  width: 100%;
+  max-width: 500px;
+  height: 55px;
+  padding: 15px;
+  font-size: 22px;
+  border: 2px solid #1312a8;
+  border-radius: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #407ba6;
+  box-shadow: 0 0 10px rgba(64, 123, 166, 0.5);
+}
+
+/* Botón */
+
+button {
+  width: 180px;
+  height: 55px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1312a8, #407ba6);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Lista de tareas */
+
+#lista-de-tareas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Tareas */
+
+.tarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #407ba6, #1312a8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.tarea:hover {
+  transform: translateY(-3px);
+}
+
+/* Texto */
+
+.tarea p {
+  font-size: 22px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+/* Tarea completada */
+
+.tarea.completada {
+  background: #1f1f1f;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+/* Iconos */
+
+i {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icono-completar {
+  color: #00ff88;
+}
+
+.icono-eliminar {
+  color: #ffffff;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
